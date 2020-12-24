@@ -1,0 +1,245 @@
+GITHUB  KHAJANA
+Lavish
+
+C:\Users\DELL>git config --global user.name "Lavish Jain"
+
+C:\Users\DELL>git config --global user.email "lavishjain36@gmail.com"
+
+C:\>d:
+
+D:\>cd BookstoreWebsite
+
+D:\BookstoreWebsite>git init
+Initialized empty Git repository in D:/BookstoreWebsite/.git/
+
+D:\BookstoreWebsite>git add *
+
+D:\BookstoreWebsite>git status
+On branch master
+
+No commits yet
+
+D:\BookstoreWebsite>git commit -m "new changes"
+
+
+You have a code
+Initialize it as a git repository -git init
+there are 2 terminology in stash and commit
+Stash=> when we develop something, this commit accept the file from stash(first level of commit)
+commit(last level in commit)
+Note:When we push code to github , first it goes to stash and then it will goes to commit.
+
+How to add your file to the stash/staging?
+git add *
+or git ass filename
+After this , entire code will be moved into the stash and then check the status by below command
+
+& check git status
+git status
+it tell us about the file added or placed in the stash
+
+
+How to commit to github?
+git commit -m "comment"
+-m is used for message
+After this ,all our code will be at the commit place and we are all set to push our code
+to github account from this place.
+
+This is how  we have to come step by step.
+
+
+Next , we have to push our code to github that is origin.
+it will be done by using connection.
+git remote add origin  paste link of github
+Now remote repository is successfully connected to local repository
+Next step is to push our code which is to remote location
+git push origin master
+Later we will discuss about the master branch and subbranch
+It will ask you for github credential for first time
+when we want to push something to github account , then we have to tell to the github people about our account .
+
+in real time, company would provide you one link for github .
+we have to ask company to get that link
+
+
+How to clone project from github?
+Clone  the project in another machine
+git clone =>it  is something which is used to extract the repository for the first time.
+command
+git clone "link of github"
+
+WHy we are saying first time?
+Later if you or person from different country  want to get that code , you will use pull command
+
+Lets say, if you are working on some project and if you have already git availabel with you.
+Then you need not to clone it completey
+We required latest changes.
+The lastest change can be updated by using pull command
+command
+git pull origin master
+
+
+How to move or merge develop branch into master?
+Master is taking care of regression changes & this one is taking care of  framework.
+Lets merge and build a powerfull framework
+
+git merge <branchname>
+to merge different branch into active branch
+git add *
+git status
+git commit -m "final commit "
+git push origin master
+After this , we will go to other person branch and pull everything in our machine by using
+git pull origin master
+so it will pull the latest changes in the local repository from central repository
+
+
+How to move or merge develop branch into master?
+How to resolve Merge conflict with GIT?
+For that , we have to talk manually with team people and delete that line of code in our develop2 branch .
+
+
+Github part-2
+1.Install git
+2.git –version
+3.pwd
+4.cd filename
+5.git init =(to create empty repository)
+6.git add .
+7git status
+8.git commit -m “first commit”
+9.git status(to check if added or not)
+10.Establish conncetion(goto github and create repository)
+11.create repository
+12.copy link and paste in cmd
+13.push the code.
+
+14.if you are commiting for first time,it will ask you to configure your account (usermail or username).
+
+DELL@DESKTOP-EDLROQB MINGW64 ~ (master)
+$ git --version
+git version 2.29.2.windows.2
+
+DELL@DESKTOP-EDLROQB MINGW64 ~ (master)
+$ pwd
+/c/Users/DELL
+
+DELL@DESKTOP-EDLROQB MINGW64 ~ (master)
+$ cd desktop
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop (master)
+$ mkdir gitdemo
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop (master)
+$ cd gitdemo
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop/gitdemo (master)
+$ cd ..
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop (master)
+$ cd test
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop/test (master)
+$ pwd
+/c/Users/DELL/desktop/test
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop/test (master)
+$ git init
+Initialized empty Git repository in C:/Users/DELL/Desktop/test/.git/
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop/test (master)
+$ cd ..
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop (master)
+$ cd Tree
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop/Tree (master)
+$ pwd
+/c/Users/DELL/desktop/Tree
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop/Tree (master)
+$ git init
+Initialized empty Git repository in C:/Users/DELL/Desktop/Tree/.git/
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop/Tree (master)
+$ git add .
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop/Tree (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   BST.txt
+        new file:   Binary tree.txt
+        new file:   Insertion sort.txt
+        new file:   LCA.txt
+        new file:   Palindromic.txt
+        new file:   STL/Array.txt
+        new file:   STL/map.txt
+        new file:   STL/pair.txt
+        new file:   STL/pop_backvector.txt
+        new file:   STL/swap.txt
+        new file:   STL/vector&iterat.txt
+        new file:   STL/vector.txt
+        new file:   buuble.txt
+        new file:   traversal in bt.txt
+
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop/Tree (master)
+$ git commit -m "Tre programs"
+[master (root-commit) 8685754] Tre programs
+ 14 files changed, 709 insertions(+)
+ create mode 100644 BST.txt
+ create mode 100644 Binary tree.txt
+ create mode 100644 Insertion sort.txt
+ create mode 100644 LCA.txt
+ create mode 100644 Palindromic.txt
+ create mode 100644 STL/Array.txt
+ create mode 100644 STL/map.txt
+ create mode 100644 STL/pair.txt
+ create mode 100644 STL/pop_backvector.txt
+ create mode 100644 STL/swap.txt
+ create mode 100644 STL/vector&iterat.txt
+ create mode 100644 STL/vector.txt
+ create mode 100644 buuble.txt
+ create mode 100644 traversal in bt.txt
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop/Tree (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop/Tree (master)
+$ git remote add origin https://github.com/lavishjain36/TreePrograms.git
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop/Tree (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/lavishjain36/Tree.git'
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop/Tree (master)
+$ git push -u origin master
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (17/17), 5.60 KiB | 302.00 KiB/s, done.
+Total 17 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/lavishjain36/TreePrograms.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop/Tree (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+DELL@DESKTOP-EDLROQB MINGW64 ~/desktop/Tree (master)
+$
+
